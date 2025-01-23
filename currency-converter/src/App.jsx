@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import {InputBox} from './components/InputBox'
+import InputBox from './components/InputBox'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
 
 function App() {
@@ -65,7 +65,7 @@ function App() {
                         />
                     </div>
                     <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
-                        Convert {from.toUpperCase()} to {to.toUpperCase()}
+                        Convert {from} to {to}
                     </button>
                 </form>
             </div>
